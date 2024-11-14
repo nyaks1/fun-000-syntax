@@ -58,7 +58,19 @@ else:
 
 #Question 5
 def check_number(n:int):
-    """
+    """    
+    TODO: Using TDD(Test Driven Development), Implement tests for the below functionality. 
+    Create a test file called `test_my_tests.py` in the root directory.
+    Create a test class called 'MyTestCases' and it should have the following test implementations:
+        test_check_number_odd_number: Tests for positive odd numbers.
+        test_check_number_even_range_2_to_5: Tests for even numbers in the range 2 to 5, ensuring it returns "Not Weird".
+        test_check_number_even_range_6_to_20: Tests for even numbers in the range 6 to 20, ensuring it returns "Weird".
+        test_check_number_even_greater_than_20: Tests for even numbers greater than 20, ensuring it returns "Not Weird".
+        test_check_number_negative_even_number: Tests for non-positive even numbers.
+        test_check_number_negative_odd_number: Tests for non-positive odd numbers.
+        test_check_number_neutral`: Tests for numbers that are neutral.
+
+        
     TODO: Given an integer n, perform the following conditions actions:
     non-positive and non-negative digit(s) are 'Neutral'
     If n is odd, return 'Weird'
@@ -69,15 +81,7 @@ def check_number(n:int):
     If n is non-positive and odd then return 'Extremely Weird'
 
 
-    TODO: Implement tests for the above functionality. Create a test file called `test_my_tests.py` in the 
-    root directory.
-     
-    Create a test class called 'MyTestCases' and it should have the following test implementations:
-        test_check_number_odd_number
-        test_check_number_even_number
-        test_check_number_negative_even_number
-        test_check_number_negative_odd_number
-        test_check_number_neutral
+
         
         
     """
