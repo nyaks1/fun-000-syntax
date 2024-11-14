@@ -60,12 +60,12 @@ def check_number(n:int):
     """
     TODO: Given an integer n, perform the following conditions actions:
     non-positive and non-negative digit(s) are neutral
-    If n is odd, print weird
-    If n is even and in the inclusive range of 2  to 5 , return Not Weird
-    If n is even and in the inclusive range of 6  to 20 , return Weird
-    If n is even and greater than 20 , return Not Weird
-    If n is non-positive and even then return very weird
-    If n is non-positive and odd then return extremely weird
+    If n is odd, return weird
+    If n is even and in the inclusive range of 2  to 5 , return 'Not Weird'
+    If n is even and in the inclusive range of 6  to 20 , return 'Weird'
+    If n is even and greater than 20 , return 'Not Weird'
+    If n is non-positive and even then return 'Very weird'
+    If n is non-positive and odd then return 'Extremely Weird'
 
 
     TODO: Implement tests for the above functionality. Create a test file called `test_my_tests.py` in the root directory
