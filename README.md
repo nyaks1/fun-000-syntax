@@ -7,6 +7,6 @@
 
 ## To Test
 
-- To run all the unittests on your terminal: `python3 -m unittest tests/test_functions.py`
+- To run all the unittests on your terminal: `python3 -m unittest tests/test_fundamentals.py`
 - To run a specific step's unittest on your terminal, e.g step 1: `python3 -m unittest tests.test_functions.TestFunctions.test_get_date_of_birth`
 - Note: at the minimum, these (unedited) tests must succeed before you may submit the solution for review.

@@ -1,8 +1,10 @@
 
 #Question 1
-get_date_of_birth(id_number): 
+get_date_of_birth(id_number:str): 
     """
     STEP 2: Extract the date of birth from the ID number and return it as a string
+
+    return format: DD/MM/YY: 
     """
     birth_of_date = id_number[4:6] 
     return 
@@ -49,7 +51,6 @@ else:
     For numbers that are multiples of both 3 and 5, it prints "FizzBuzz.
 
     TODO: define a function called fizzbuzz and implement the fucntionality above.
-    TODO: Create a test class called 'test_my_tests.py' in the root directory, name the class "myTests"
     """
     
 
@@ -59,8 +60,8 @@ else:
 def check_number(n:int):
     """
     TODO: Given an integer n, perform the following conditions actions:
-    non-positive and non-negative digit(s) are neutral
-    If n is odd, return weird
+    non-positive and non-negative digit(s) are 'Neutral'
+    If n is odd, return 'Weird'
     If n is even and in the inclusive range of 2  to 5 , return 'Not Weird'
     If n is even and in the inclusive range of 6  to 20 , return 'Weird'
     If n is even and greater than 20 , return 'Not Weird'
