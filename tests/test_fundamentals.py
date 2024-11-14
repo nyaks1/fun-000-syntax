@@ -33,7 +33,7 @@ class TestFunctions(TestCase):
         self.assertEqual(expected_output,text_capture.getvalue())
         
     def test_check_number_attributes_exists(self):
-        obj = test_my_tests.myTests()
+        obj = test_my_tests.MyTestCases()
         self.assertTrue(hasattr(obj,"test_check_number_odd_number"))
         self.assertTrue(hasattr(obj,"test_check_number_even_number"))
         self.assertTrue(hasattr(obj,"test_check_number_negative_even_number"))
@@ -41,9 +41,9 @@ class TestFunctions(TestCase):
         self.assertTrue(hasattr(obj,"test_check_number_neutral"))
         
     def test_methods_are_not_empty(self):
-        test_methods = [method for method in dir(test_my_tests.myTests) if method.startswith('test_')]
+        test_methods = [method for method in dir(test_my_tests.MyTestCases) if method.startswith('test_')]
         for method in test_methods:
-            method_obj = getattr(test_my_tests.myTests, method)
+            method_obj = getattr(test_my_tests.MyTestCases, method)
             source = inspect.getsource(method_obj)
 
             if 'pass' in source and len(source.strip().split('\n')) <= 2:

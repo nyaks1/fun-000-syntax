@@ -68,12 +68,16 @@ def check_number(n:int):
     If n is non-positive and odd then return 'Extremely Weird'
 
 
-    TODO: Implement tests for the above functionality. Create a test file called `test_my_tests.py` in the root directory
-    Functions to implement:
+    TODO: Implement tests for the above functionality. Create a test file called `test_my_tests.py` in the 
+    root directory.
+     
+    Create a test class called 'MyTestCases' and it should have the following test implementations:
         test_check_number_odd_number
         test_check_number_even_number
         test_check_number_negative_even_number
         test_check_number_negative_odd_number
         test_check_number_neutral
+        
+        
     """
 
