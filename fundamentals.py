@@ -79,10 +79,5 @@ def check_number(n:int):
     If n is even and greater than 20 , return 'Not Weird'
     If n is non-positive and even then return 'Very weird'
     If n is non-positive and odd then return 'Extremely Weird'
-
-
-
-        
-        
     """
 
