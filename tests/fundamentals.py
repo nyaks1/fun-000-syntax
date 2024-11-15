@@ -12,7 +12,7 @@ def get_date_of_birth(id_number:str):
     for i in id_number:
         format(i)
     return 
-get_date_of_birth()
+get_date_of_birth(id)
 
 
 #Question 2    
@@ -117,7 +117,8 @@ def check_number(n:int):
     
     elif n == int("-") and n == int("odd"):
         return 'Extremely Weird'
-    
+    else:
+        "Neutral"
     print(n)
     
 print(5)
