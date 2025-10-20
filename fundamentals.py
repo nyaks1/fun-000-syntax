@@ -5,7 +5,13 @@ def get_date_of_birth(id_number:str):
 
     return format: DD/MM/YY: 
     """
-    pass
+
+    year_num = id_number[0:2]
+    month_num = id_number[2:4]
+    date_number = id_number[4:6]
+
+    return f"{date_number}/{month_num}/{year_num}"
+    
 
 
 #Question 2    
@@ -17,8 +23,13 @@ def get_gender(id_number):
     Formula: 1 if the ID number's 7th to 10th digit is less than 5000, the person is
     female and if it is greater than 4999, the person is male.
     """
-    
-    pass   
+    gender_get = id_number[6:10]
+    gender_num = int(gender_get)
+    if gender_num < 5000:
+        return "female"
+    else:
+        return "male"
+     
 
     
 #Question 3
@@ -31,8 +42,13 @@ def get_citizenship(id_number):
     a South African citizen and if it is greater than 01, the person is a non-South 
     African citizen.
     """
-    pass
+    citizenship_get = id_number[10:12]
+    citizenship_num = int(citizenship_get)
 
+    if citizenship_num < 1:
+        return "South African citizen"
+    else:
+        return "Non-South African citizen"
 
 #Question 4
 
@@ -44,6 +60,15 @@ def get_citizenship(id_number):
 
     TODO: define a function called fizzbuzz and implement the fucntionality above.
     """
+def fizzbuzz(num):
+
+    if num  % 5 == 0 and num % 3 ==0:
+      return "FizzBuzz"
+    if num % 3 == 0:
+      return "Fizz"
+    if num % 5 == 0:
+      return "Buzz"
+
 
 
 #Question 5
